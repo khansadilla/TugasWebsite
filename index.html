@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulasi Asam-Basa Interaktif</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script> <!-- Tambahkan Three.js -->
+</head>
+<body>
+    <div class="container">
+        <h1>Simulasi Larutan Asam-Basa Interaktif</h1>
+        <h4>Sesuaikan volume untuk mensimulasikan reaksi asam-basa!</h4>
+
+        <!-- Input untuk volume asam -->
+        <label for="acid-volume">Volume Larutan Asam (HCl) [mL]:</label>
+        <input type="range" id="acid-volume" class="slider" min="0" max="100" value="0" step="10">
+        <span id="acid-value">0</span> mL
+        <br/><br/>
+
+        <!-- Input untuk volume basa -->
+        <label for="base-volume">Volume Larutan Basa (NaOH) [mL]:</label>
+        <input type="range" id="base-volume" class="slider" min="0" max="100" value="0" step="10">
+        <span id="base-value">0</span> mL
+        
+        <div class="output" id="output"></div>
+        <h2>Visualisasi Perubahan Warna</h2>
+        <div id="color-indicator"></div>
+        <h2>Visualisasi Molekul 3D</h2>
+        <div id="molecule-visualization" style="width: 400px; height: 300px; margin: 0 auto;"></div>
+    </div>
+        <!-- Output untuk hasil simulasi -->
+
+        <!-- Visualisasi molekul 3D -->
+
+    <!-- JavaScript untuk simulasi -->
+    <script src="script.js"></script>
+</body>
+</html>
